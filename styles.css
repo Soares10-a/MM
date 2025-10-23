@@ -1,0 +1,262 @@
+/* Paleta de Cores: Preto (#000000), Branco (#FFFFFF), Cinza Escuro (#333333), Acento (#0A1931 - Azul Marinho) */
+ 
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+body {
+    font-family: 'Open Sans', sans-serif; /* Corpo do Texto */
+    color: #333333;
+    background-color: #FFFFFF;
+    line-height: 1.6;
+}
+ 
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif; /* Títulos */
+    color: #000000;
+    font-weight: 700;
+}
+ 
+/* ---------------------------------- */
+/* 1. CABEÇALHO (HEADER) - Fixo */
+/* ---------------------------------- */
+#main-header {
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #EEEEEE;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%; /* Espaçamento lateral */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Sutil */
+}
+ 
+.logo {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 1.4em;
+    color: #0A1931; /* Acento */
+}
+ 
+.desktop-menu a {
+    text-decoration: none;
+    color: #333333;
+    margin-left: 30px;
+    font-weight: 600;
+    transition: color 0.3s, border-bottom 0.3s;
+    padding-bottom: 5px;
+}
+ 
+.desktop-menu a:hover,
+.desktop-menu a.active {
+    color: #0A1931; /* Acento na interação */
+    border-bottom: 2px solid #0A1931;
+}
+ 
+/* Botão Hamburger (Esconder no Desktop) */
+.hamburger {
+    display: none; 
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    color: #0A1931;
+    cursor: pointer;
+}
+ 
+/* ---------------------------------- */
+/* 2. HERO SECTION */
+/* ---------------------------------- */
+.hero {
+    height: 100vh; /* Altura total da tela */
+    background: url('caminho/para/sua/imagem-hero.jpg') center center no-repeat; /* Substituir pela imagem */
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 80px; /* Compensa o cabeçalho fixo */
+    position: relative;
+}
+ 
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Escurece a imagem */
+    z-index: 1;
+}
+ 
+.hero-content {
+    color: #FFFFFF;
+    z-index: 2;
+    max-width: 800px;
+}
+ 
+.hero-content h1 {
+    font-size: 4em;
+    margin-bottom: 15px;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+ 
+.hero-content p {
+    font-size: 1.3em;
+    margin-bottom: 30px;
+}
+ 
+/* Botão de Destaque (CTA) */
+.cta-button {
+    display: inline-block;
+    background-color: #0A1931; /* Azul Marinho (Acento) */
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 15px 35px;
+    border-radius: 5px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+ 
+.cta-button:hover {
+    background-color: #1a335a; 
+    transform: translateY(-2px); /* Efeito de elevação moderna */
+}
+ 
+/* ---------------------------------- */
+/* 3. BLOCO DE APRESENTAÇÃO (3 Colunas) */
+/* ---------------------------------- */
+.apresentacao {
+    padding: 80px 0;
+    background-color: #F8F8F8; /* Cinza claro para contraste */
+}
+ 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+ 
+.card-bloco {
+    flex: 1;
+    background-color: #FFFFFF;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    text-decoration: none;
+    color: #333333;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+ 
+.card-bloco:hover {
+    transform: translateY(-5px); /* Efeito de elevação */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+ 
+.card-bloco h2 {
+    font-size: 1.5em;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: #000000;
+}
+ 
+.icon-acento {
+    font-size: 2.5em;
+    color: #0A1931; /* Cor de Destaque */
+}
+ 
+/* ---------------------------------- */
+/* 4. RODAPÉ (FOOTER) */
+/* ---------------------------------- */
+footer {
+    background-color: #000000;
+    color: #AAAAAA;
+    padding: 30px 0;
+    font-size: 0.9em;
+}
+ 
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Para responsividade */
+}
+ 
+.footer-links a {
+    color: #AAAAAA;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 0.3s;
+}
+ 
+.footer-links a:hover {
+    color: #FFFFFF;
+}
+ 
+.social-links a {
+    color: #AAAAAA;
+    font-size: 1.2em;
+    margin-left: 15px;
+    transition: color 0.3s;
+}
+ 
+.social-links a:hover {
+    color: #0A1931; /* Ícones interativos mudam para a cor de acento */
+}
+ 
+/* ---------------------------------- */
+/* 5. MEDIA QUERIES (RESPONSIVIDADE) */
+/* ---------------------------------- */
+@media (max-width: 768px) {
+    /* Menu Mobile */
+    .desktop-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px; /* Abaixo do header */
+        left: 0;
+        background-color: #FFFFFF;
+        padding: 10px 0;
+        border-top: 1px solid #EEEEEE;
+    }
+ 
+    .desktop-menu a {
+        margin: 0;
+        padding: 10px 5%;
+        border-bottom: 1px solid #EEEEEE;
+    }
+    .hamburger {
+        display: block; /* Mostra o menu hamburger */
+    }
+ 
+    .apresentacao .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+ 
+    .hero-content h1 {
+        font-size: 2.5em;
+    }
+ 
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+ 
+    .footer-links a {
+        margin: 0 10px;
+    }
+}
