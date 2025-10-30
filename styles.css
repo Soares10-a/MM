@@ -9,8 +9,8 @@
  
 body {
     font-family: 'Open Sans', sans-serif; /* Corpo do Texto */
-    color: #333333;
-    background-color: #FFFFFF;
+    color: #ffffff;
+    background-color: #7567ee;
     line-height: 1.6;
 }
  
@@ -24,7 +24,7 @@ h1, h2, h3 {
 /* 1. CABEÇALHO (HEADER) - Fixo */
 /* ---------------------------------- */
 #main-header {
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     border-bottom: 1px solid #EEEEEE;
     position: fixed;
     width: 100%;
@@ -65,7 +65,7 @@ h1, h2, h3 {
     background: none;
     border: none;
     font-size: 1.5em;
-    color: #0A1931;
+    color: #ff0000;
     cursor: pointer;
 }
  
@@ -260,3 +260,196 @@ footer {
         margin: 0 10px;
     }
 }
+/* Estilos Gerais (adapte ao seu tema) */
+
+body {
+
+    font-family: Arial, sans-serif;
+
+    margin: 0;
+
+    padding: 0;
+
+    background-color: #f4f4f4;
+
+    color: #333;
+
+}
+ 
+/* -------------------------------------- */
+
+/* ESTILOS DA SEÇÃO DE REFERÊNCIAS */
+
+/* -------------------------------------- */
+ 
+#referencias-estilo {
+
+    padding: 40px 20px;
+
+    max-width: 1200px;
+
+    margin: 0 auto; /* Centraliza o conteúdo */
+
+    text-align: center;
+
+}
+ 
+#referencias-estilo h1 {
+
+    color: #000;
+
+    margin-bottom: 10px;
+
+    font-size: 2.5em;
+
+}
+ 
+.introducao {
+
+    font-size: 1.1em;
+
+    margin-bottom: 40px;
+
+    color: #666;
+
+}
+ 
+/* Configuração da Galeria (Grid) */
+
+.galeria-referencias {
+
+    display: grid;
+
+    /* 3 colunas em telas maiores, mínimo de 300px */
+
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+    gap: 30px; /* Espaço entre os cartões */
+
+}
+ 
+/* Estilo do Cartão Individual */
+
+.referencia-card {
+
+    background-color: #fff;
+
+    border-radius: 10px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+
+    overflow: hidden;
+
+    text-align: left;
+
+    transition: transform 0.3s ease-in-out;
+
+}
+ 
+.referencia-card:hover {
+
+    transform: translateY(-5px); /* Efeito de elevação ao passar o mouse */
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+
+}
+ 
+.estilo-imagem {
+
+    width: 100%;
+
+    height: 350px; /* Altura fixa para as imagens */
+
+    object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
+
+    display: block;
+
+}
+ 
+.card-content {
+
+    padding: 20px;
+
+}
+ 
+.card-content h2 {
+
+    color: #1a1a1a;
+
+    margin-top: 0;
+
+    font-size: 1.8em;
+
+    border-bottom: 2px solid #ff5722; /* Linha de destaque */
+
+    padding-bottom: 5px;
+
+    margin-bottom: 10px;
+
+}
+ 
+.card-content h4 {
+
+    color: #ff5722; /* Cor de destaque para os títulos menores */
+
+    margin-top: 15px;
+
+    margin-bottom: 5px;
+
+}
+ 
+.card-content p {
+
+    line-height: 1.5;
+
+    margin-bottom: 10px;
+
+}
+ 
+.card-content ul {
+
+    list-style: none;
+
+    padding: 0;
+
+    margin-top: 5px;
+
+}
+ 
+.card-content ul li {
+
+    background: url('caminho/para/seu/icone.svg') no-repeat left center; /* Adicione um ícone, se quiser */
+
+    background-size: 15px;
+
+    padding-left: 20px;
+
+    margin-bottom: 5px;
+
+    font-size: 0.95em;
+
+}
+ 
+ 
+/* Estilo Responsivo para telas menores */
+
+@media (max-width: 768px) {
+
+    #referencias-estilo h1 {
+
+        font-size: 2em;
+
+    }
+
+    .galeria-referencias {
+
+        /* Em telas menores, o grid-template-columns (auto-fit) 
+
+           vai fazer com que os cartões se empilhem automaticamente, 
+
+           mantendo o mínimo de 300px. */
+
+    }
+
+}
+ 
